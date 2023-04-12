@@ -1,0 +1,1 @@
+/home/pavuk/Project/web/2023/fourth_temlate/fourth_temlate/src/scss/global.scss

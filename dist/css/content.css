@@ -1,0 +1,561 @@
+@charset "UTF-8";
+.content {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+.content .registration-block {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.content .registration-block .container {
+  display: flex;
+  flex-direction: row;
+}
+.content .registration-block .container .registration-block__left {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.content .registration-block .container .registration-block__left p,
+.content .registration-block .container .registration-block__left h1 {
+  text-align: center;
+}
+.content .registration-block .container .registration-block__left h1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #333333;
+  padding-bottom: 30px;
+}
+.content .registration-block .container .registration-block__left p {
+  max-width: 480px;
+  margin-bottom: 80px;
+  line-height: 28px;
+}
+.content .registration-block .container .registration-block__right {
+  text-align: left;
+}
+.content .registration-block .container .registration-block__right h3 {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+}
+.content .registration-block .container .registration-block__right label {
+  position: relative;
+  margin-top: 10px;
+}
+.content .registration-block .container .registration-block__right label:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 3px;
+  background-image: url("../../img/icons/required.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.content .registration-block .container .registration-block__right a {
+  color: #4f8bbf;
+}
+.content .registration-block .container .registration-block__right input[type=text],
+.content .registration-block .container .registration-block__right [type=email],
+.content .registration-block .container .registration-block__right [type=tel] {
+  font-size: 14px;
+  padding: 0% 2%;
+  border: 1px solid #c3c3c3;
+  border-radius: 3px;
+  width: 100%;
+  height: 45px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.content .registration-block .container .registration-block__right input[type=text]:active, .content .registration-block .container .registration-block__right input[type=text]:focus,
+.content .registration-block .container .registration-block__right [type=email]:active,
+.content .registration-block .container .registration-block__right [type=email]:focus,
+.content .registration-block .container .registration-block__right [type=tel]:active,
+.content .registration-block .container .registration-block__right [type=tel]:focus {
+  box-shadow: 0 0 10px rgba(0, 132, 255, 0.5);
+}
+.content .registration-block .container .registration-block__right .registration-block__center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content .registration-block .container .registration-block__right .registration-block__center .registration-block__agree {
+  display: flex;
+  text-align: right;
+  width: 100%;
+}
+.content .registration-block .container .registration-block__right .registration-block__center .registration-block__agree label {
+  display: block;
+}
+.content .registration-block .container .registration-block__right .registration-block__center .registration-block__registration-btn {
+  margin-top: 30px;
+  background-color: #337ab7;
+  color: #ffffff;
+  height: 50px;
+  width: 350px;
+  padding: 0px 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+.content .registration-block .container .registration-block__right .registration-block__center .registration-block__registration-btn:hover {
+  background: linear-gradient(to right, #44c0ef, #337ab7);
+  font-weight: 700;
+}
+.content .registration-block .container .registration-block__left,
+.content .registration-block .container .registration-block__right {
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+.content .course-development-of-websites-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+.content .course-development-of-websites-block .container .course-development-of-websites-block__title {
+  padding-top: 100px;
+}
+.content .course-development-of-websites-block .container .course-development-of-websites-block__slider {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  flex-direction: row;
+}
+.content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide img {
+  height: 60px;
+  width: 60px;
+}
+.content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide h3 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 40px;
+  font-size: 23px;
+  border-bottom: 2px solid #3498db;
+  padding: 10px 10px;
+  height: 90px;
+}
+.content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide p {
+  text-align: center;
+  margin: 10px 20px;
+}
+.content .course-development-of-websites-block .container .slick-slider {
+  justify-content: center;
+  position: relative;
+}
+.content .course-development-of-websites-block .container .slick-slider .slick-dots li {
+  margin: 0 10px;
+}
+.content .course-development-of-websites-block .container .slick-slider .slick-dots li button:before {
+  font-size: 20px;
+}
+
+/* Для екранів з шириною менше 320px*/
+@media (max-width: 320px) {
+  /* CSS правила для адаптивного дизайну */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .content .registration-block .container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .content .registration-block .container .registration-block__left {
+    margin-right: 0px;
+  }
+  .content .registration-block .container .registration-block__left h1 {
+    font-size: 25px;
+    line-height: 32px;
+    padding-bottom: 8px;
+  }
+  .content .registration-block .container .registration-block__left p {
+    width: 100%;
+    margin-bottom: 40px;
+    line-height: 20px;
+  }
+  .content .registration-block .container .registration-block__right h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center label,
+  .content .registration-block .container .registration-block__right .registration-block__center a {
+    font-size: 10px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center label {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center .registration-block__registration-btn {
+    width: 200px;
+    font-size: 14px;
+  }
+  .content .course-development-of-websites-block .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__title {
+    padding-top: 60px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider {
+    padding-top: 0px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide {
+    padding-top: 0px;
+    width: auto;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide h3 {
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 25px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide p {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+/* Для екранів з шириною від 320px до 450px*/
+@media (min-width: 321px) and (max-width: 450px) {
+  /* CSS правила для адаптивного дизайну */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .content .registration-block .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .registration-block .container .registration-block__left {
+    margin-right: 0px;
+  }
+  .content .registration-block .container .registration-block__left h1 {
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 10px;
+  }
+  .content .registration-block .container .registration-block__left p {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+  .content .registration-block .container .registration-block__right {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content .registration-block .container .registration-block__right label {
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+  }
+  .content .registration-block .container .registration-block__right h3 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .content .registration-block .container .registration-block__right input {
+    max-width: 400px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center label,
+  .content .registration-block .container .registration-block__right .registration-block__center a {
+    font-size: 13px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center .registration-block__registration-btn {
+    width: 250px;
+    font-size: 14px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__title {
+    padding-top: 60px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider {
+    padding-top: 0px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide {
+    padding-top: 10px;
+    margin: 0px;
+    width: auto;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide h3 {
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 30px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide p {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+/* Для екранів з шириною від 450px до 600px */
+@media (min-width: 450px) and (max-width: 600px) {
+  /* CSS правила для адаптивного дизайну */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .content .registration-block .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .registration-block .container .registration-block__left {
+    margin-right: 0px;
+  }
+  .content .registration-block .container .registration-block__left h1 {
+    font-size: 38px;
+    line-height: 45px;
+    padding-bottom: 30px;
+  }
+  .content .registration-block .container .registration-block__left p {
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .content .registration-block .container .registration-block__right {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content .registration-block .container .registration-block__right label {
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+  }
+  .content .registration-block .container .registration-block__right h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 35px;
+  }
+  .content .registration-block .container .registration-block__right input {
+    max-width: 400px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center label,
+  .content .registration-block .container .registration-block__right .registration-block__center a {
+    font-size: 15px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center .registration-block__registration-btn {
+    width: 280px;
+    font-size: 16px;
+  }
+  .content .registration-block .container .registration-block__right input[type=text],
+  .content .registration-block .container .registration-block__right [type=email],
+  .content .registration-block .container .registration-block__right [type=tel] {
+    font-size: 18px;
+    padding: 0% 3%;
+    border-radius: 3px;
+    width: 100%;
+    height: 60px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__input-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__title {
+    padding-top: 60px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider {
+    padding-top: 20px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide {
+    padding-top: 10px;
+    margin: 0px;
+    width: auto;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide h3 {
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 30px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide p {
+    padding-top: 25px;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+}
+/* Для екранів з шириною від 600px до 850px */
+@media (min-width: 600px) and (max-width: 800px) {
+  /* CSS правила для адаптивного дизайну */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .content .registration-block .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .registration-block .container .registration-block__left {
+    margin-right: 0px;
+  }
+  .content .registration-block .container .registration-block__left h1 {
+    font-size: 38px;
+    line-height: 45px;
+    padding-bottom: 30px;
+  }
+  .content .registration-block .container .registration-block__left p {
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .content .registration-block .container .registration-block__right {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content .registration-block .container .registration-block__right label {
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+  }
+  .content .registration-block .container .registration-block__right h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 35px;
+  }
+  .content .registration-block .container .registration-block__right input {
+    max-width: 400px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center label {
+    display: flex;
+    align-items: center;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center label,
+  .content .registration-block .container .registration-block__right .registration-block__center a {
+    font-size: 18px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__center .registration-block__registration-btn {
+    width: 280px;
+    font-size: 16px;
+  }
+  .content .registration-block .container .registration-block__right input[type=text],
+  .content .registration-block .container .registration-block__right [type=email],
+  .content .registration-block .container .registration-block__right [type=tel] {
+    font-size: 18px;
+    padding: 0% 3%;
+    border-radius: 3px;
+    width: 100%;
+    height: 60px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+  .content .registration-block .container .registration-block__right .registration-block__input-checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__title {
+    padding-top: 60px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider {
+    padding-top: 20px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide {
+    padding-top: 10px;
+    margin: 5px;
+    width: auto;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide h3 {
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 30px;
+  }
+  .content .course-development-of-websites-block .container .course-development-of-websites-block__slider .course-development-of-websites-block__slide p {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=content.css.map */

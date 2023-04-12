@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.header {
+  height: 80px;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container img {
+  width: 60px;
+  height: 60px;
+  margin-right: auto;
+  z-index: 29;
+  float: left;
+}
+.header .container .header__navigation {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  float: right;
+}
+.header .container .header__navigation a {
+  padding: 12px 12px;
+  border-radius: 22px;
+}
+.header .container .header__navigation a:hover {
+  background: linear-gradient(to bottom, #44c0ef, #337ab7);
+  color: #ffffff;
+}
+.header .container .header__navigation .header__btn-apply {
+  margin-left: 5px;
+  background-color: #337ab7;
+  color: #ffffff;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  float: right;
+}
+.header .container .header__navigation .header__btn-apply:hover {
+  background: linear-gradient(to right, #44c0ef, #337ab7);
+}
+
+/* Для екранів з шириною менше 320px*/
+@media (max-width: 320px) {
+  /* CSS правила для адаптивного дизайну */
+  .header {
+    z-index: 10;
+  }
+  .header .container {
+    position: relative;
+  }
+  .header .container .header__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    transform: translateX(-102%);
+    transition: transform 0.5s;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .header .container .header__navigation a {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .header .container .header__navigation .header__btn-apply {
+    font-size: 20px;
+    height: 45px;
+    border-radius: 23px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .header .container .header__navigation.active {
+    transform: translateX(0);
+  }
+  .header .container .header__menu-btn {
+    width: 50px;
+    height: 40px;
+    background: #337ab7;
+    position: absolute;
+    right: 15px;
+    z-index: 30;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .header .container .header__menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 31;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    margin-bottom: 6px;
+  }
+  .header .container .header__menu-btn span:nth-of-type(2) {
+    top: calc(50% - 8px);
+  }
+  .header .container .header__menu-btn span:nth-of-type(3) {
+    top: calc(50% + 8px);
+    background-color: #ffffff;
+  }
+}
+/* Для екранів з шириною від 320px до 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  /* CSS правила для адаптивного дизайну */
+  .header {
+    z-index: 10;
+  }
+  .header .container {
+    position: relative;
+  }
+  .header .container .header__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    transform: translateX(-102%);
+    transition: transform 0.5s;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .header .container .header__navigation a {
+    font-size: 25px;
+    margin-bottom: 7px;
+    padding: 10px;
+  }
+  .header .container .header__navigation .header__btn-apply {
+    font-size: 20px;
+    height: 45px;
+    border-radius: 23px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .header .container .header__navigation.active {
+    transform: translateX(0);
+  }
+  .header .container .header__menu-btn {
+    width: 50px;
+    height: 40px;
+    background: #337ab7;
+    position: absolute;
+    right: 15px;
+    z-index: 30;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .header .container .header__menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 31;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    margin-bottom: 6px;
+  }
+  .header .container .header__menu-btn span:nth-of-type(2) {
+    top: calc(50% - 8px);
+  }
+  .header .container .header__menu-btn span:nth-of-type(3) {
+    top: calc(50% + 8px);
+    background-color: #ffffff;
+  }
+  .header.active {
+    box-shadow: none;
+  }
+}
+/* Для екранів з шириною від 768px до 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS правила для адаптивного дизайну */
+  .header {
+    z-index: 10;
+  }
+  .header .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .header .container .header__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .header .container .header__navigation a {
+    font-size: 34px;
+    margin-bottom: 17px;
+    padding: 20px;
+    border-radius: 35px;
+  }
+  .header .container .header__navigation .header__btn-apply {
+    font-size: 35px;
+    height: 60px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+  }
+  .header .container .header__navigation.active {
+    transform: translateX(0);
+  }
+  .header .container .header__menu-btn {
+    width: 60px;
+    height: 50px;
+    background: #337ab7;
+    position: absolute;
+    right: 15px;
+    z-index: 30;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .header .container .header__menu-btn span {
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 31;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .header .container .header__menu-btn span:nth-of-type(2) {
+    top: calc(50% - 12px);
+  }
+  .header .container .header__menu-btn span:nth-of-type(3) {
+    top: calc(50% + 12px);
+    background-color: #ffffff;
+  }
+  .header.active {
+    box-shadow: none;
+  }
+}
+/* Для екранів з шириною понад 1024px */
+@media (min-width: 1024px) {
+  /* CSS правила для адаптивного дизайну */
+  .header__menu-btn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

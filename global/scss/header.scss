@@ -1,0 +1,292 @@
+@import 'variables.scss';
+
+// Верстка header для екранів більше 1240px
+.header {
+  height: 80px;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  background-color: $white;
+  z-index: 10;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 60px;
+      height: 60px;
+      margin-right: auto;
+      z-index: 29;
+      float: left;
+    }
+    .header__navigation {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      float: right;
+      a {
+        padding: 12px 12px; // відступ між елементами навігації
+        border-radius: 22px;
+      }
+      a:hover {
+        background: linear-gradient(to bottom, #44c0ef, #337ab7);
+        color: $white;
+      }
+      .header__btn-apply {
+        margin-left: 5px;
+        background-color: $blue-btn;
+        color: $white;
+        height: 40px;
+        padding: 0px 20px;
+        border-radius: 20px;
+        float: right;
+      }
+      .header__btn-apply:hover {
+        background: linear-gradient(to right, #44c0ef, #337ab7);
+      }
+    }
+  }
+}
+
+
+/* Для екранів з шириною менше 320px*/
+@media (max-width: 320px) {
+  /* CSS правила для адаптивного дизайну */
+  .header {
+    z-index: 10;
+    .container {
+      position: relative;
+      .header__navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: $white;
+        transform: translateX(-102%);
+        transition: transform 0.5s;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+        a {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+
+        .header__btn-apply {
+          font-size: 20px;
+          height: 45px;
+          border-radius: 23px;
+          margin-bottom: 20px;
+          margin-left: 0px;
+        }
+      }
+
+      .header__navigation.active {
+        transform: translateX(0);
+      }
+
+      .header__menu-btn {
+        width: 50px;
+        height: 40px;
+        background: $blue-btn;
+        position: absolute;
+        right: 15px;
+        z-index: 30;
+        overflow: hidden;
+        border-radius: 5px;
+
+        span {
+          width: 30px;
+          height: 2px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 31;
+          transform: translate(-50%, -50%);
+          background-color: $white;
+          margin-bottom: 6px;
+        }
+
+        span:nth-of-type(2) {
+          top: calc(50% - 8px);
+        }
+
+        span:nth-of-type(3) {
+          top: calc(50% + 8px);
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+/* Для екранів з шириною від 320px до 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  /* CSS правила для адаптивного дизайну */
+  .header {
+    z-index: 10;
+    .container {
+      position: relative;
+      .header__navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: $white;
+        transform: translateX(-102%);
+        transition: transform 0.5s;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+        a {
+          font-size: 25px;
+          margin-bottom: 7px;
+          padding: 10px;
+        }
+
+        .header__btn-apply {
+          font-size: 20px;
+          height: 45px;
+          border-radius: 23px;
+          margin-bottom: 20px;
+          margin-left: 0px;
+        }
+      }
+
+      .header__navigation.active {
+        transform: translateX(0);
+      }
+
+      .header__menu-btn {
+        width: 50px;
+        height: 40px;
+        background: $blue-btn;
+        position: absolute;
+        right: 15px;;
+        z-index: 30;
+        overflow: hidden;
+        border-radius: 5px;
+
+        span {
+          width: 30px;
+          height: 2px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 31;
+          transform: translate(-50%, -50%);
+          background-color: $white;
+          margin-bottom: 6px;
+        }
+
+        span:nth-of-type(2) {
+          top: calc(50% - 8px);
+        }
+
+        span:nth-of-type(3) {
+          top: calc(50% + 8px);
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .header.active {
+    box-shadow: none;
+  }
+}
+
+/* Для екранів з шириною від 768px до 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS правила для адаптивного дизайну */
+  .header {
+    z-index: 10;
+    .container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      .header__navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: $white;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+        a {
+          font-size: 34px;
+          margin-bottom: 17px;
+          padding: 20px;
+          border-radius: 35px;
+        }
+
+        .header__btn-apply {
+          font-size: 35px;
+          height: 60px;
+          border-radius: 40px;
+          margin-bottom: 30px;
+          margin-left: 0px;
+        }
+      }
+
+      .header__navigation.active {
+        transform: translateX(0);
+      }
+
+      .header__menu-btn {
+        width: 60px;
+        height: 50px;
+        background: $blue-btn;
+        position: absolute;
+        right: 15px;
+        z-index: 30;
+        overflow: hidden;
+        border-radius: 5px;
+
+        span {
+          width: 30px;
+          height: 3px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 31;
+          transform: translate(-50%, -50%);
+          background-color: $white;
+          margin-bottom: 8px;
+        }
+
+        span:nth-of-type(2) {
+          top: calc(50% - 12px);
+        }
+
+        span:nth-of-type(3) {
+          top: calc(50% + 12px);
+          background-color: $white;
+        }
+      }
+    }
+  }
+  .header.active {
+    box-shadow: none;
+  }
+}
+
+/* Для екранів з шириною понад 1024px */
+@media (min-width: 1024px) {
+  /* CSS правила для адаптивного дизайну */
+  .header__menu-btn{
+    display: none;
+  }
+}

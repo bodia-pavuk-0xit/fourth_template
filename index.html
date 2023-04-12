@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+  <head>
+    <title>Четвертий шаблон</title>
+
+    <link rel="stylesheet" href="dist/css/fonts.css" />
+    <link rel="stylesheet" href="dist/css/global.css" />
+    <link rel="stylesheet" href="dist/css/header.css" />
+    <link rel="stylesheet" href="dist/css/content.css" />
+    <link rel="shortcut icon" href="img/logo_Oxit.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+  <body>
+    <!-- Блок header -->
+    <header class="header">
+      <div class="container">
+        <a href="#"><img src="img/logo_Oxit.png" alt="Header Logo" /></a>
+        <div class="header__navigation">
+          <a href="#">Головна</a>
+          <a href="#">Програма курсу</a>
+          <a href="#">Відгуки про курс</a>
+          <a href="#">Відео</a>
+          <a href="#">Ментори</a>
+          <button class="header__btn-apply">Подати заявку</button>
+        </div>
+        <div class="header__menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Головний блок контенту -->
+    <div class="content">
+      <section class="registration-block">
+        <div class="container">
+          <div class="registration-block__left">
+            <h1>Курси програмування у Луцьку</h1>
+            <p>
+              Сфера ІТ розвивається максимально швидко. Зараз дуже IT популярно
+              здобувати освіту, що повязана з ІТ. Існує лише одна проблема брак
+              дійсно кваліфікованих спеціалістів в Україні. Під час навчання в
+              університеті ми отримуємо мало практики / "живих", реальних
+              кейсів. ІТ школа ОхІТ створила таку методику навчання, при якій за
+              короткий час ви отримаєте необхідні знання, щоб стати ІТ
+              спеціалістом. Чекаємо вас на нших курсах з програмування в Луцьку.
+              Старт наступного курсу 3 серпня.
+            </p>
+          </div>
+          <div class="registration-block__right">
+            <h3>Зареєструватися на курси</h3>
+            <label for="first-name">Ім'я</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Ім'я"
+            />
+
+            <label for="last-name">Прізвище</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Прізвище"
+            />
+            <label for="interests">Мене більше цікавить</label>
+            <input
+              type="text"
+              id="interests"
+              name="interests"
+              placeholder="developer or QA"
+            />
+            <label for="phone">Номер телефону</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]*"
+              placeholder="Номер телефону: +38 XXX XX XX XXX"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+            <div class="registration-block__center">
+              <div class="registration-block__agree">
+                <label for="agreement">
+                  <input
+                    class="registration-block__input-checkbox"
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                  />
+                  Я погоджуюсь з <a href="#">Політикою Конфіденційності</a>
+                </label>
+              </div>
+              <button
+                class="registration-block__registration-btn"
+                type="submit"
+              >
+                Зареєструватися зараз
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="course-development-of-websites-block">
+        <div class="container">
+          <h2 class="course-development-of-websites-block__title title">
+            Курс «Розробка сайтів»
+          </h2>
+          <div class="course-development-of-websites-block__slider">
+            <div class="course-development-of-websites-block__slide">
+              <img src="img/icons/course-icon-1.png" alt="Course Icon" />
+              <h3>Розробка сайтів на WordPress</h3>
+              <p>
+                Курс складається з коротких навчальних відео, на яких ти пізнаєш
+                основи WordPress, навчишся створювати сайти різної складності:
+                від блогів до інтернет магазинів. Всі знання закріпиш за
+                допомогою тестових завдань.
+              </p>
+            </div>
+            <div class="course-development-of-websites-block__slide">
+              <img src="img/icons/course-icon-2.png" alt="Course Icon" />
+              <h3>Розробка сайтів на Drupal 8</h3>
+              <p>
+                Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою,
+                ти пізнаєш секрети основних та додаткових Drupal-модулів (Views,
+                Rules, Panels, Devel, Paragraph та багатьох інших).
+              </p>
+            </div>
+            <div class="course-development-of-websites-block__slide">
+              <img src="img/icons/course-icon-3.png" alt="Course Icon" />
+              <h3>Ознайомлення з тестуванням</h3>
+              <p>
+                Ти дізнаєшся про забезпечення якості в контексті різних моделей
+                розробки ПЗ. Також, QA- спеціаліст розкаже про види тестування
+                (функціональне, регресивне, системне, тестування швидкості
+                тощо).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/slider-course.js"></script>
+    <script src="js/redisration.js"></script>
+  </body>
+</html>
