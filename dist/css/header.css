@@ -48,6 +48,13 @@
   background: linear-gradient(to right, #44c0ef, #337ab7);
 }
 
+.content {
+  padding-top: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 /* Для екранів з шириною менше 320px*/
 @media (max-width: 320px) {
   /* CSS правила для адаптивного дизайну */

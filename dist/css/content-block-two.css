@@ -1,0 +1,139 @@
+/* For screens with a width of more than 1024px */
+.statistics-block {
+  width: 100%;
+  background-color: #3498db;
+  height: 250px;
+}
+.statistics-block .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.statistics-block .container .statistics-block__item {
+  width: 25%;
+}
+.statistics-block .container .statistics-block__item img {
+  width: 85px;
+  height: 60px;
+  margin-bottom: 28px;
+}
+.statistics-block .container .statistics-block__item .statistics-block__nambers {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+.statistics-block .container .statistics-block__item p {
+  color: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 320px) {
+  /* CSS rules for responsive design */
+  .statistics-block {
+    width: 100%;
+    background-color: #3498db;
+    height: auto;
+  }
+  .statistics-block .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+  }
+  .statistics-block .container .statistics-block__item {
+    display: inline-block;
+    width: 48%;
+    height: 48%;
+    margin: 1%;
+  }
+  .statistics-block .container .statistics-block__item img {
+    width: 85px;
+    height: 60px;
+    margin-bottom: 18px;
+  }
+  .statistics-block .container .statistics-block__item .statistics-block__nambers {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .statistics-block .container .statistics-block__item p {
+    color: #ffffff;
+    font-size: 13px;
+  }
+}
+/* For screens with width from 320px to 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  /* CSS rules for responsive design */
+  .statistics-block {
+    width: 100%;
+    background-color: #3498db;
+    height: auto;
+  }
+  .statistics-block .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+  }
+  .statistics-block .container .statistics-block__item {
+    display: inline-block;
+    width: 48%;
+    height: 48%;
+    margin: 1%;
+  }
+  .statistics-block .container .statistics-block__item img {
+    width: 85px;
+    height: 60px;
+    margin-bottom: 18px;
+  }
+  .statistics-block .container .statistics-block__item .statistics-block__nambers {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .statistics-block .container .statistics-block__item p {
+    color: #ffffff;
+    font-size: 15px;
+  }
+}
+/* For screens with width from 768px to 770px */
+@media (min-width: 768px) and (max-width: 770px) {
+  /* CSS rules for responsive design */
+  .statistics-block {
+    width: 100%;
+    background-color: #3498db;
+    height: auto;
+  }
+  .statistics-block .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+  }
+  .statistics-block .container .statistics-block__item {
+    display: inline-block;
+    width: 48%;
+    height: 48%;
+    margin: 1%;
+  }
+  .statistics-block .container .statistics-block__item img {
+    width: 85px;
+    height: 60px;
+    margin-bottom: 18px;
+  }
+  .statistics-block .container .statistics-block__item .statistics-block__nambers {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .statistics-block .container .statistics-block__item p {
+    color: #ffffff;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=content-block-two.css.map */

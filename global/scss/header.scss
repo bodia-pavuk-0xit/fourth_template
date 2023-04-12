@@ -50,6 +50,13 @@
   }
 }
 
+.content{
+  padding-top: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 
 /* Для екранів з шириною менше 320px*/
 @media (max-width: 320px) {

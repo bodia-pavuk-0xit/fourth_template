@@ -1,0 +1,147 @@
+@import "variables.scss";
+
+/* For screens with a width of more than 1024px */
+
+// Statistics block
+.statistics-block {
+  width: 100%;
+  background-color: $blue-main;
+  height: 250px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .statistics-block__item {
+        width: 25%;
+      img {
+        width: 85px;
+        height: 60px;
+        margin-bottom: 28px;
+      }
+      .statistics-block__nambers {
+        color: $white;
+        font-size: 30px;
+        margin-bottom: 18px;
+      }
+      p {
+        color: $white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 320px) {
+  /* CSS rules for responsive design */
+  // Statistics block
+  .statistics-block {
+    width: 100%;
+    background-color: $blue-main;
+    height: auto;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 30px 0px;
+      .statistics-block__item {
+        display: inline-block;
+        width: 48%;
+        height: 48%;
+        margin: 1%;
+        img {
+          width: 85px;
+          height: 60px;
+          margin-bottom: 18px;
+        }
+        .statistics-block__nambers {
+          color: $white;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: $white;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+/* For screens with width from 320px to 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  /* CSS rules for responsive design */
+  // Statistics block
+  .statistics-block {
+    width: 100%;
+    background-color: $blue-main;
+    height: auto;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 30px 0px;
+      .statistics-block__item {
+        display: inline-block;
+        width: 48%;
+        height: 48%;
+        margin: 1%;
+        img {
+          width: 85px;
+          height: 60px;
+          margin-bottom: 18px;
+        }
+        .statistics-block__nambers {
+          color: $white;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: $white;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* For screens with width from 768px to 770px */
+@media (min-width: 768px) and (max-width: 770px) {
+  /* CSS rules for responsive design */
+  // Statistics block
+  .statistics-block {
+    width: 100%;
+    background-color: $blue-main;
+    height: auto;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 30px 0px;
+      .statistics-block__item {
+        display: inline-block;
+        width: 48%;
+        height: 48%;
+        margin: 1%;
+        img {
+          width: 85px;
+          height: 60px;
+          margin-bottom: 18px;
+        }
+        .statistics-block__nambers {
+          color: $white;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: $white;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
