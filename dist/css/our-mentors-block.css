@@ -1,0 +1,27 @@
+.our-mentors-block .container .our-mentors-block__title {
+  padding-top: 30px;
+}
+.our-mentors-block .container .our-mentors-block__slider {
+  padding: 30px 0px;
+}
+.our-mentors-block .container .our-mentors-block__slider .our-mentors-block__slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.our-mentors-block .container .our-mentors-block__slider .our-mentors-block__slide img {
+  margin-right: 100px;
+}
+.our-mentors-block .container .our-mentors-block__slider .our-mentors-block__slide .our-mentors-block__about-mentor {
+  text-align: left;
+}
+.our-mentors-block .container .our-mentors-block__slider .our-mentors-block__slide .our-mentors-block__about-mentor .our-mentors-block__name-mentors {
+  color: #4c9cf0;
+  font-weight: 700;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+.our-mentors-block .container .our-mentors-block__slider .our-mentors-block__slide .our-mentors-block__about-mentor .our-mentors-block__info {
+  margin: 15px 0px;
+}
+/*# sourceMappingURL=our-mentors-block.css.map */

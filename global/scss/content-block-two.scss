@@ -12,7 +12,7 @@
     flex-direction: row;
     justify-content: center;
     .statistics-block__item {
-        width: 25%;
+      width: 25%;
       img {
         width: 85px;
         height: 60px;
@@ -28,6 +28,86 @@
         margin-left: 10px;
         margin-right: 10px;
       }
+    }
+  }
+}
+
+.testimonials-block {
+  margin-bottom: 50px;
+  .container {
+    text-align: center;
+    .testimonials-block__title {
+      padding-top: 80px;
+      padding-bottom: 35px;
+    }
+    .testimonials-block__slider {
+      display: flex;
+      justify-content: center;
+      max-width: 950px;
+      margin: 0 auto;
+      .testimonials-block__slide {
+        width: 100%;
+        .testimonials-block__column {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          .testimonials-block__row {
+            display: flex;
+            flex-direction: row;
+            height: 180px;
+            width: 100%;
+            justify-content: center;
+            .testimonials-block__quote-one {
+              font-size: 60px;
+              height: 100%;
+              line-height: 60px;
+              margin: 0px;
+            }
+            p {
+              font-size: 20px;
+              line-height: 25px;
+              margin-top: 20px;
+              font-style: normal;
+            }
+            .testimonials-block__quote-two {
+              display: flex;
+              font-size: 60px;
+              height: 100%;
+              line-height: 70px;
+              margin: 0px;
+              align-items: end;
+            }
+          }
+          h4 {
+            color: $black;
+            font-size: 22px;
+            line-height: 25px;
+          }
+          p {
+            font-style: italic;
+          }
+        }
+      }
+    }
+    .slick-slider {
+      .slick-dots li button:before {
+        font-family: "slick";
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.video-block {
+  .container {
+    .video-block__title {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    p {
+      margin-bottom: 40px;
     }
   }
 }
@@ -68,6 +148,78 @@
       }
     }
   }
+  .testimonials-block {
+    margin-bottom: 20px;
+    .container {
+      text-align: center;
+      .testimonials-block__title {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        line-height: 30px;
+        font-size: 25px;
+      }
+      .testimonials-block__slider {
+        display: flex;
+        justify-content: center;
+        max-width: 950px;
+        margin: 0 auto;
+        .testimonials-block__slide {
+          width: 100%;
+          .testimonials-block__column {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            .testimonials-block__row {
+              display: flex;
+              flex-direction: row;
+              height: auto;
+              width: 100%;
+              justify-content: center;
+              .testimonials-block__quote-one {
+                font-size: 40px;
+                height: 100%;
+                line-height: 60px;
+                margin: 0px;
+              }
+              p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 20px;
+                font-style: normal;
+              }
+              .testimonials-block__quote-two {
+                display: flex;
+                font-size: 40px;
+                height: 100%;
+                line-height: 10px;
+                margin: 0px;
+                align-items: end;
+                height: auto;
+                justify-content: flex-end;
+              }
+            }
+            h4 {
+              color: $black;
+              font-size: 22px;
+              margin-top: 15px;
+              line-height: 25px;
+            }
+            p {
+              font-style: italic;
+            }
+          }
+        }
+      }
+      .slick-slider {
+        .slick-dots li button:before {
+          font-family: "slick";
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
 }
 /* For screens with width from 320px to 768px */
 @media (min-width: 320px) and (max-width: 768px) {
@@ -101,6 +253,77 @@
         p {
           color: $white;
           font-size: 15px;
+        }
+      }
+    }
+  }
+  .testimonials-block {
+    margin-bottom: 20px;
+    .container {
+      text-align: center;
+      .testimonials-block__title {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        line-height: 40px;
+      }
+      .testimonials-block__slider {
+        display: flex;
+        justify-content: center;
+        max-width: 950px;
+        margin: 0 auto;
+        .testimonials-block__slide {
+          width: 100%;
+          .testimonials-block__column {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            .testimonials-block__row {
+              display: flex;
+              flex-direction: row;
+              height: auto;
+              width: 100%;
+              justify-content: center;
+              .testimonials-block__quote-one {
+                font-size: 60px;
+                height: 100%;
+                line-height: 60px;
+                margin: 0px;
+              }
+              p {
+                font-size: 22px;
+                line-height: 28px;
+                margin-top: 20px;
+                font-style: normal;
+              }
+              .testimonials-block__quote-two {
+                display: flex;
+                font-size: 60px;
+                height: 100%;
+                line-height: 10px;
+                margin: 0px;
+                align-items: end;
+                height: auto;
+                justify-content: flex-end;
+              }
+            }
+            h4 {
+              color: $black;
+              font-size: 22px;
+              margin-top: 15px;
+              line-height: 25px;
+            }
+            p {
+              font-style: italic;
+            }
+          }
+        }
+      }
+      .slick-slider {
+        .slick-dots li button:before {
+          font-family: "slick";
+          font-size: 15px;
+          line-height: 20px;
         }
       }
     }
@@ -145,3 +368,26 @@
   }
 }
 
+@media (max-width: 1020px) {
+  .video-block {
+    .container {
+      p {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .video-block__video {
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      margin-bottom: 30px;
+    }
+  }
+}
