@@ -1,0 +1,30 @@
+.call-to-action-block {
+  background: #3498db;
+  width: 100%;
+  height: auto;
+}
+.call-to-action-block .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 220px;
+}
+.call-to-action-block .container .call-to-action-block__item img {
+  width: auto;
+  height: 60px;
+  filter: invert(1);
+  margin-bottom: 20px;
+}
+.call-to-action-block .container .call-to-action-block__item p {
+  color: #ffffff;
+  font-style: 14px;
+}
+.call-to-action-block .container .call-to-action-block__item .call-to-action-block__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+.call-to-action-block .container .call-to-action-block__item a {
+  color: #ffffff;
+}
+/*# sourceMappingURL=cta-block.css.map */

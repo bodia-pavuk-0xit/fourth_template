@@ -5,7 +5,6 @@ $(document).ready(function () {
     slidesToScroll: 1,
     dots: true,
     infinite: true,
-    cssEase: "linear",
     fade: true,
     arrows: false,
     autoplay: true,

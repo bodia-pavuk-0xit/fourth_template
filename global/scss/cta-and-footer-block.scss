@@ -1,0 +1,54 @@
+@import "variables.scss";
+.call-to-action-block {
+  background: $blue-main;
+  width: 100%;
+  height: auto;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+    .call-to-action-block__item {
+      img {
+        width: auto;
+        height: 60px;
+        filter: invert(1);
+        margin-bottom: 20px;
+      }
+      p {
+        color: $white;
+        font-style: 14px;
+      }
+      .call-to-action-block__subtitle {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 140px;
+    p{
+      margin-bottom: 15px;
+      color: $blue;
+    }
+    a{
+      font-size: 15px;
+    }
+  }
+}
+
