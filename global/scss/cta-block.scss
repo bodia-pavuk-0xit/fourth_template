@@ -54,7 +54,7 @@
 
 /* For screens with width less than 320px*/
 @media (max-width: 420px) {
-  /* CSS rules for responsive design */
+/* SCSS rules for responsive design */
   .call-to-action-block {
     background: $blue-main;
     width: 100%;
@@ -93,7 +93,7 @@
 }
 /* For screens with width from 320px to 768px */
 @media (min-width: 420px) and (max-width: 768px) {
-  /* CSS rules for responsive design */
+/* SCSS rules for responsive design */
   .call-to-action-block {
     background: $blue-main;
     width: 100%;

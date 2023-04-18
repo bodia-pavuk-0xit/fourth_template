@@ -181,9 +181,9 @@
   }
 }
 
-/* Для екранів з шириною менше 320px*/
+/* For screens with width less than 320px*/
 @media (max-width: 320px) {
-  /* CSS правила для адаптивного дизайну */
+  /* CSS rules for responsive design */
   .content {
     display: flex;
     flex-direction: column;
@@ -270,9 +270,9 @@
   }
 }
 
-/* Для екранів з шириною від 320px до 450px*/
+/* For screens with width from 320px to 450px*/
 @media (min-width: 321px) and (max-width: 450px) {
-  /* CSS правила для адаптивного дизайну */
+  /* CSS rules for responsive design */
   .content {
     display: flex;
     flex-direction: column;
@@ -367,9 +367,9 @@
   }
 }
 
-/* Для екранів з шириною від 450px до 600px */
+/* For screens with width from 450px to 600px */
 @media (min-width: 450px) and (max-width: 600px) {
-  /* CSS правила для адаптивного дизайну */
+  /* CSS rules for responsive design */
   .content {
     display: flex;
     flex-direction: column;
@@ -483,9 +483,9 @@
   }
 }
 
-/* Для екранів з шириною від 600px до 850px */
+/* For screens with width from 600px to 850px */
 @media (min-width: 600px) and (max-width: 850px) {
-  /* CSS правила для адаптивного дизайну */
+  /* CSS rules for responsive design */
   .content {
     display: flex;
     flex-direction: column;

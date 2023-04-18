@@ -1,6 +1,6 @@
 @import "variables.scss";
 
-// Верстка header для екранів більше 1240px
+// Header layout for screens larger than 1240px
 .header {
   height: 80px;
   align-items: center;
@@ -44,7 +44,7 @@
         }
       }
       a {
-        padding: 12px 16px; // відступ між елементами навігації
+        padding: 12px 16px;
         border-radius: 22px;
         text-decoration: none;
       }
@@ -62,9 +62,9 @@
   justify-content: center;
 }
 
-/* Для екранів з шириною менше 320px*/
+/* For screens with width less than 320px*/
 @media (max-width: 320px) {
-  /* CSS правила для адаптивного дизайну */
+/* SCSS rules for responsive design */
   .header {
     z-index: 10;
     .container {
@@ -128,9 +128,9 @@
     }
   }
 }
-/* Для екранів з шириною від 320px до 768px */
+/* For screens with width from 320px to 768px */
 @media (min-width: 320px) and (max-width: 768px) {
-  /* CSS правила для адаптивного дизайну */
+/* SCSS rules for responsive design */
   .header {
     z-index: 10;
     .container {
@@ -199,9 +199,9 @@
   }
 }
 
-/* Для екранів з шириною від 768px до 1024px */
+/* For screens with width from 768px to 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS правила для адаптивного дизайну */
+/* SCSS rules for responsive design */
   .header {
     z-index: 10;
     .container {
@@ -273,9 +273,9 @@
   }
 }
 
-/* Для екранів з шириною понад 1024px */
+/* For screens with a width of more than 1024px */
 @media (min-width: 1024px) {
-  /* CSS правила для адаптивного дизайну */
+/* SCSS rules for responsive design */
   .header__menu-btn {
     display: none;
   }
