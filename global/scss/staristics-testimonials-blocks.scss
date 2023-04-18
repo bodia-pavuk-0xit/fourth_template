@@ -33,7 +33,7 @@
 }
 
 .testimonials-block {
-  margin-bottom: 50px;
+  padding-top: 40px;
   .container {
     text-align: center;
     .testimonials-block__title {
@@ -55,7 +55,7 @@
           .testimonials-block__row {
             display: flex;
             flex-direction: row;
-            height: 180px;
+            height: 200px;
             width: 100%;
             justify-content: center;
             .testimonials-block__quote-one {
@@ -66,7 +66,7 @@
             }
             p {
               font-size: 20px;
-              line-height: 25px;
+              line-height: 30px;
               margin-top: 20px;
               font-style: normal;
             }
@@ -104,7 +104,7 @@
   .container {
     .video-block__title {
       padding-bottom: 30px;
-      padding-top: 30px;
+      padding-top: 100px;
     }
     p {
       margin-bottom: 40px;
@@ -330,8 +330,8 @@
   }
 }
 
-/* For screens with width from 768px to 770px */
-@media (min-width: 768px) and (max-width: 770px) {
+/* For screens with width from 768px to 1020px */
+@media (min-width: 768px) and (max-width: 1020px) {
   /* CSS rules for responsive design */
   // Statistics block
   .statistics-block {
@@ -362,6 +362,73 @@
         p {
           color: $white;
           font-size: 15px;
+        }
+      }
+    }
+  }
+  .testimonials-block {
+    padding-top: 40px;
+    .container {
+      text-align: center;
+      .testimonials-block__title {
+        padding-top: 80px;
+        padding-bottom: 35px;
+      }
+      .testimonials-block__slider {
+        display: flex;
+        justify-content: center;
+        max-width: 950px;
+        margin: 0 auto;
+        .testimonials-block__slide {
+          width: 100%;
+          .testimonials-block__column {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            .testimonials-block__row {
+              display: flex;
+              flex-direction: row;
+              height: 250px;
+              width: 100%;
+              justify-content: center;
+              .testimonials-block__quote-one {
+                font-size: 60px;
+                height: 100%;
+                line-height: 60px;
+                margin: 0px;
+              }
+              p {
+                font-size: 20px;
+                line-height: 30px;
+                margin-top: 20px;
+                font-style: normal;
+              }
+              .testimonials-block__quote-two {
+                display: flex;
+                font-size: 60px;
+                height: 100%;
+                line-height: 70px;
+                margin: 0px;
+                align-items: end;
+              }
+            }
+            h4 {
+              color: $black;
+              font-size: 22px;
+              line-height: 25px;
+            }
+            p {
+              font-style: italic;
+            }
+          }
+        }
+      }
+      .slick-slider {
+        .slick-dots li button:before {
+          font-family: "slick";
+          font-size: 13px;
+          line-height: 20px;
         }
       }
     }

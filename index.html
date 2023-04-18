@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="dist/css/fonts.css" />
     <link rel="stylesheet" href="dist/css/global.css" />
     <link rel="stylesheet" href="dist/css/header.css" />
-    <link rel="stylesheet" href="dist/css/content-block-one.css" />
-    <link rel="stylesheet" href="dist/css/content-block-two.css" />
+    <link rel="stylesheet" href="dist/css/registration-dev-blocks.css" />
+    <link rel="stylesheet" href="dist/css/staristics-testimonials-blocks.css" />
     <link rel="stylesheet" href="dist/css/our-mentors-block.css" />
-    <link rel="stylesheet" href="dist/css/cta-and-footer-block.css" />
+    <link rel="stylesheet" href="dist/css/cta-block.css" />
     <link rel="shortcut icon" href="img/logo_Oxit.png" type="image/png" />
     <link
       rel="stylesheet"
@@ -27,17 +27,17 @@
   </head>
 
   <body>
-    <!-- Блок header -->
+    <!-- Header block -->
     <header class="header">
       <div class="container">
         <a href="#"><img src="img/logo_Oxit.png" alt="Header Logo" /></a>
         <div class="header__navigation">
-          <a href="#">Головна</a>
-          <a href="#">Програма курсу</a>
-          <a href="#">Відгуки про курс</a>
-          <a href="#">Відео</a>
-          <a href="#">Ментори</a>
-          <button class="header__btn-apply">Подати заявку</button>
+          <a href="index.html">Головна</a>
+          <a href="#block-2">Програма курсу</a>
+          <a href="#block-3">Відгуки про курс</a>
+          <a href="#block-4">Відео</a>
+          <a href="#block-5">Ментори</a>
+          <a href="#block-6" class="header__apply-btn">Подати заявку</a>
         </div>
         <div class="header__menu-btn">
           <span></span>
@@ -47,9 +47,9 @@
       </div>
     </header>
 
-    <!-- Головний блок контенту -->
+    <!-- Main content block -->
     <div class="content">
-      <section class="registration-block">
+      <section class="registration-block" id="block-1">
         <div class="container">
           <div class="registration-block__left">
             <h1>Курси програмування у Луцьку</h1>
@@ -64,70 +64,76 @@
               Старт наступного курсу 3 серпня.
             </p>
           </div>
-          <div class="registration-block__right">
+          <div class="registration-block__right" id="block-6">
             <h3>Зареєструватися на курси</h3>
-            <label for="first-name">Ім'я</label>
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              placeholder="Ім'я"
-            />
+            <form action="index.html" method="post">
+              <label for="first-name">Ім'я</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="Ім'я"
+                required
+              />
 
-            <label for="last-name">Прізвище</label>
-            <input
-              type="text"
-              id="last-name"
-              name="last-name"
-              placeholder="Прізвище"
-            />
-            <label for="interests">Мене більше цікавить</label>
-            <input
-              type="text"
-              id="interests"
-              name="interests"
-              placeholder="developer or QA"
-            />
-            <label for="phone">Номер телефону</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              pattern="[0-9]*"
-              placeholder="Номер телефону: +38 XXX XX XX XXX"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="email"
-              required
-            />
-            <div class="registration-block__center">
-              <div class="registration-block__agree">
-                <label for="agreement">
-                  <input
-                    class="registration-block__input-checkbox"
-                    type="checkbox"
-                    id="agreement"
-                    name="agreement"
-                  />
-                  Я погоджуюсь з <a href="#">Політикою Конфіденційності</a>
-                </label>
+              <label for="last-name">Прізвище</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Прізвище"
+                required
+              />
+              <label for="interests">Мене більше цікавить</label>
+              <input
+                type="text"
+                id="interests"
+                name="interests"
+                placeholder="developer or QA"
+                required
+              />
+              <label for="phone">Номер телефону</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="^\+38\s\d{3}\s\d{2}\s\d{2}\s\d{3}$"
+                placeholder="Номер телефону: +38 XXX XX XX XXX"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email"
+                required
+              />
+              <div class="registration-block__center">
+                <div class="registration-block__agree">
+                  <label for="agreement">
+                    <input
+                      class="registration-block__input-checkbox"
+                      type="checkbox"
+                      id="agreement"
+                      name="agreement"
+                      required
+                    />
+                    Я погоджуюсь з <a href="#">Політикою Конфіденційності</a>
+                  </label>
+                </div>
+                <button
+                  class="registration-block__registration-btn"
+                  type="submit"
+                >
+                  Зареєструватися зараз
+                </button>
               </div>
-              <button
-                class="registration-block__registration-btn"
-                type="submit"
-              >
-                Зареєструватися зараз
-              </button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
-      <section class="course-development-of-websites-block">
+      <section class="course-development-of-websites-block" id="block-2">
         <div class="container">
           <h2 class="course-development-of-websites-block__title title">
             Курс «Розробка сайтів»
@@ -189,7 +195,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonials-block">
+      <section class="testimonials-block" id="block-3">
         <div class="container">
           <h2 class="testimonials-block__title title">
             Що кажуть студенти наших курсів:
@@ -246,14 +252,14 @@
                   </p>
                   <p class="testimonials-block__quote-two">❞</p>
                 </div>
-                <h4>Олексій</h4>
+                <h4>Андрій</h4>
                 <p>Drupal-девелопер</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="video-block">
+      <section class="video-block" id="block-4">
         <div class="container">
           <h2 class="video-block__title title">Відео</h2>
           <p>
@@ -278,7 +284,7 @@
           </div>
         </div>
       </section>
-      <section class="our-mentors-block">
+      <section class="our-mentors-block" id="block-5">
         <div class="container">
           <h2 class="our-mentors-block__title title">Наші ментори</h2>
           <div class="our-mentors-block__slider">
@@ -417,7 +423,7 @@
         </div>
       </section>
     </div>
-    <!-- Блок footer -->
+    <!-- Footer block -->
     <footer class="footer">
       <div class="container">
         <p>© Copyright 2018-2020 Internet Devels</p>
@@ -433,7 +439,6 @@
     <script src="js/burger-menu.js"></script>
     <script src="js/slider-course.js"></script>
     <script src="js/slider-testimonials.js"></script>
-    <script src="js/redisration.js"></script>
     <script src="js/slider-our-mentors.js"></script>
   </body>
 </html>

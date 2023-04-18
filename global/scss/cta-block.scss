@@ -1,0 +1,132 @@
+@import "variables.scss";
+.call-to-action-block {
+  background: $blue-main;
+  width: 100%;
+  height: auto;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+    .call-to-action-block__item {
+      img {
+        width: auto;
+        height: 60px;
+        filter: invert(1);
+        margin-bottom: 20px;
+      }
+      p {
+        color: $white;
+        font-style: 14px;
+      }
+      .call-to-action-block__subtitle {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 140px;
+    p {
+      margin-bottom: 15px;
+      color: $blue;
+    }
+    a {
+      font-size: 15px;
+    }
+  }
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 420px) {
+  /* CSS rules for responsive design */
+  .call-to-action-block {
+    background: $blue-main;
+    width: 100%;
+    height: auto;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 300px;
+      .call-to-action-block__item {
+        width: 50%;
+        height: 100px;
+        img {
+          width: auto;
+          height: 40px;
+          filter: invert(1);
+          margin-bottom: 20px;
+        }
+        p {
+          color: $white;
+          font-size: 10px;
+        }
+        .call-to-action-block__subtitle {
+          font-weight: 700;
+          font-size: 16px;
+        }
+        a {
+          color: $white;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+/* For screens with width from 320px to 768px */
+@media (min-width: 420px) and (max-width: 768px) {
+  /* CSS rules for responsive design */
+  .call-to-action-block {
+    background: $blue-main;
+    width: 100%;
+    height: auto;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 300px;
+      .call-to-action-block__item {
+        width: 50%;
+        height: 100px;
+        img {
+          width: auto;
+          height: 40px;
+          filter: invert(1);
+          margin-bottom: 20px;
+        }
+        p {
+          color: $white;
+          font-size: 16px;
+        }
+        .call-to-action-block__subtitle {
+          font-weight: 700;
+          font-size: 16px;
+        }
+        a {
+          color: $white;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

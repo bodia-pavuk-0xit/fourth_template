@@ -6,7 +6,7 @@
   flex-direction: column;
   .registration-block {
     display: flex;
-    margin-top: 50px;
+    padding-top: 50px;
     flex-direction: column;
     .container {
       display: flex;
@@ -23,7 +23,7 @@
           text-align: center;
         }
         h1 {
-          font-size: 35px;
+          font-size: 30px;
           font-weight: 600;
           line-height: 40px;
           color: $black;
@@ -42,10 +42,11 @@
           color: $black;
           font-size: 20px;
           font-weight: 600;
+          padding-bottom: 20px;
         }
         label {
           position: relative;
-          margin-top: 10px;
+          margin-top: 20px;
           &:after {
             content: "";
             display: inline-block;
@@ -74,7 +75,7 @@
           width: 100%;
           height: 45px;
           margin-top: 3px;
-          margin-bottom: 5px;
+          margin-bottom: 10px;
           &:active,
           &:focus {
             box-shadow: 0 0 10px rgba(0, 132, 255, 0.5);
@@ -104,6 +105,7 @@
             padding: 0px 20px;
             border-radius: 30px;
             text-align: center;
+            text-transform: uppercase;
           }
 
           .registration-block__registration-btn:hover {
@@ -154,7 +156,7 @@
             margin-top: 10px;
             margin-bottom: 30px;
             line-height: 40px;
-            font-size: 23px;
+            font-size: 22px;
             border-bottom: 2px solid $blue-main;
             padding: 10px 10px;
             height: 90px;
@@ -187,7 +189,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
     .registration-block {
       .container {
         width: 100%;
@@ -301,8 +302,6 @@
           align-items: center;
           flex-direction: column;
 
-         
-
           label {
             max-width: 400px;
             width: 100%;
@@ -413,7 +412,7 @@
             line-height: 35px;
           }
           input {
-            max-width: 400px;
+            width: 100%;
           }
           .registration-block__center {
             display: flex;
@@ -443,8 +442,7 @@
             margin-top: 3px;
             margin-bottom: 5px;
           }
-          .registration-block__input-checkbox
-          {
+          .registration-block__input-checkbox {
             width: 20px;
             height: 20px;
           }
@@ -486,7 +484,7 @@
 }
 
 /* Для екранів з шириною від 600px до 850px */
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 850px) {
   /* CSS правила для адаптивного дизайну */
   .content {
     display: flex;
@@ -518,10 +516,12 @@
           align-items: center;
           flex-direction: column;
           label {
-            max-width: 400px;
             width: 100%;
             text-align: left;
             font-size: 20px;
+          }
+          input{
+            width: 100%;
           }
           h3 {
             font-size: 30px;
@@ -529,17 +529,13 @@
             margin-bottom: 10px;
             line-height: 35px;
           }
-          input {
-            max-width: 400px;
-          }
           .registration-block__center {
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 400px;
             width: 100%;
 
-            label{
+            label {
               display: flex;
               align-items: center;
             }
@@ -565,8 +561,7 @@
             margin-top: 3px;
             margin-bottom: 5px;
           }
-          .registration-block__input-checkbox
-          {
+          .registration-block__input-checkbox {
             width: 20px;
             height: 20px;
           }

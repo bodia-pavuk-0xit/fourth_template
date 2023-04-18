@@ -41,6 +41,12 @@
   margin: 15px 0px;
 }
 
+@media (max-width: 500px) {
+  img {
+    width: 200px;
+    height: auto;
+  }
+}
 /* For screens with width less than 880px*/
 @media (max-width: 600px) {
   /* CSS rules for responsive design */
