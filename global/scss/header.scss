@@ -18,9 +18,7 @@
       background-color: $blue-btn;
       color: $white;
       text-decoration: none;
-      &:hover {
-        background: linear-gradient(to bottom, #44c0ef, #337ab7);
-      }
+
     }
     img {
       width: 60px;
@@ -37,7 +35,6 @@
       .header__apply-btn {
         background-color: $blue-btn;
         color: $white;
-        margin-bottom: 20px;
         &:hover {
           background: linear-gradient(to bottom, #44c0ef, #337ab7);
           color: $white;
@@ -64,7 +61,7 @@
 
 /* For screens with width less than 320px*/
 @media (max-width: 320px) {
-/* SCSS rules for responsive design */
+  /* SCSS rules for responsive design */
   .header {
     z-index: 10;
     .container {
@@ -83,6 +80,9 @@
         transform: translateX(-102%);
         transition: transform 0.5s;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+        .header__apply-btn {
+          margin-bottom: 20px;
+        }
 
         a {
           font-size: 20px;
@@ -130,7 +130,7 @@
 }
 /* For screens with width from 320px to 768px */
 @media (min-width: 320px) and (max-width: 768px) {
-/* SCSS rules for responsive design */
+  /* SCSS rules for responsive design */
   .header {
     z-index: 10;
     .container {
@@ -149,6 +149,9 @@
         transform: translateX(-102%);
         transition: transform 0.5s;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+        .header__apply-btn {
+          margin-bottom: 20px;
+        }
 
         a {
           font-size: 25px;
@@ -201,7 +204,7 @@
 
 /* For screens with width from 768px to 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-/* SCSS rules for responsive design */
+  /* SCSS rules for responsive design */
   .header {
     z-index: 10;
     .container {
@@ -222,6 +225,9 @@
         transform: translateX(-100%);
         transition: transform 0.5s;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+        .header__apply-btn {
+          margin-bottom: 20px;
+        }
 
         a {
           font-size: 34px;
@@ -275,11 +281,8 @@
 
 /* For screens with a width of more than 1024px */
 @media (min-width: 1024px) {
-/* SCSS rules for responsive design */
+  /* SCSS rules for responsive design */
   .header__menu-btn {
     display: none;
-  }
-  .header__apply-btn {
-    margin-bottom: 0px;
   }
 }

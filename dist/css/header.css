@@ -18,9 +18,6 @@
   color: #ffffff;
   text-decoration: none;
 }
-.header .container .header__menu-btn:hover {
-  background: linear-gradient(to bottom, #44c0ef, #337ab7);
-}
 .header .container img {
   width: 60px;
   height: 60px;
@@ -37,7 +34,6 @@
 .header .container .header__navigation .header__apply-btn {
   background-color: #337ab7;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 .header .container .header__navigation .header__apply-btn:hover {
   background: linear-gradient(to bottom, #44c0ef, #337ab7);
@@ -82,6 +78,9 @@
     transform: translateX(-102%);
     transition: transform 0.5s;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .header .container .header__navigation .header__apply-btn {
+    margin-bottom: 20px;
   }
   .header .container .header__navigation a {
     font-size: 20px;
@@ -142,6 +141,9 @@
     transform: translateX(-102%);
     transition: transform 0.5s;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .header .container .header__navigation .header__apply-btn {
+    margin-bottom: 20px;
   }
   .header .container .header__navigation a {
     font-size: 25px;
@@ -209,6 +211,9 @@
     transition: transform 0.5s;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   }
+  .header .container .header__navigation .header__apply-btn {
+    margin-bottom: 20px;
+  }
   .header .container .header__navigation a {
     font-size: 34px;
     margin-bottom: 17px;
@@ -255,9 +260,6 @@
   /* SCSS rules for responsive design */
   .header__menu-btn {
     display: none;
-  }
-  .header__apply-btn {
-    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=header.css.map */
